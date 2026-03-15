@@ -1,6 +1,7 @@
 # BDAT 603 Project II: Interactive Sales Dashboard
 
-**Author:** Humphrey Kweku Ampong Yeboah 
+**Author:** Humphrey Kweku Ampong Yeboah
+
 **Live Demo:** [https://haky.shinyapps.io/BDAT603_SHINY_DASHBOARD/](https://haky.shinyapps.io/BDAT603_SHINY_DASHBOARD/)
 
 ## Overview
