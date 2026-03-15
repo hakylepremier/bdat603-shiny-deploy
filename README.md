@@ -9,17 +9,22 @@ This repository contains a fully functional interactive Shiny application develo
 
 The application utilizes a simulated online sales dataset to explore the promotional impact on spending behavior. It demonstrates proper UI and Server structuring, reactive programming principles, and interactive descriptive analytics.
 
+![Interactive Sales Dashboard](dashboard_screenshot.png)
+
 ## Repository Contents
 
 * `app.R`: The core Shiny application script containing the UI definition, server logic, and standard data simulation.
 * `BDAT603_SHINY_DEPLOY.Rproj`: The RStudio project configuration file.
 * `.gitignore`: Specifies intentionally untracked files, including local rsconnect deployment states.
+* `Spark_Architecture.Rmd`: An R Markdown document containing the original, fully compliant Apache Spark (`sparklyr`) implementation of the project requirements for grading and reference.
 
 ## Architecture & Deployment Note
 
 The primary project specifications strictly required an Apache Spark connection (sparklyr) to handle data sampling and filtering before collecting results to R. 
 
 However, to successfully deploy this application to the free tier of shinyapps.io, the data workflow in this specific repository was adapted to use standard dplyr operations. This architectural adjustment prevents the server crashes and memory timeouts associated with attempting to run a local Spark cluster alongside a Shiny app in a constrained 1GB RAM cloud environment. All UI components, inputs, outputs, and reactive logic remain identical to the Spark-based implementation.
+
+For documentation and academic reference, the original Spark-dependent codebase is preserved and documented within the `Spark_Architecture.Rmd` file.
 
 ## Features
 
