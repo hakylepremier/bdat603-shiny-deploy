@@ -219,7 +219,7 @@ ui <- fluidPage(
       br(),
       hr(),
       p(strong("Author:"), "Humphrey Kweku Ampong Yeboah"),
-      p(strong("Course:"), "BDAT 603")
+      p(strong("Course:"), "BDAT 603 Project II")
     ),
     
     mainPanel(
